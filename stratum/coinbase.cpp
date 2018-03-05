@@ -209,6 +209,7 @@ void coinbase_create(YAAMP_COIND *coind, YAAMP_JOB_TEMPLATE *templ, json_value *
 	   	strcmp(coind->symbol, "INN") == 0 || // Innova coin
 	   	strcmp(coind->symbol, "DSR") == 0 || // Desire coin
 	   	strcmp(coind->symbol, "GBX") == 0 || // GoByte coin
+	        strcmp(coind->symbol, "FINEX") == 0 || // FINEX coin
 		strcmp(coind->symbol, "DASH") == 0 || strcmp(coind->symbol, "DASH-TESTNET") == 0) // Dash 12.1
 	{
 		char script_dests[2048] = { 0 };
